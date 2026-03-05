@@ -1,15 +1,45 @@
 import React from "react";
 import { RxCross2 } from "react-icons/rx";
+import img1 from "../../assets/images/sheep1.jpg";
+import img2 from "../../assets/images/sheep2.jpg";
+import img3 from "../../assets/images/sheep3.jpg";
 
 const SheepPopupComponent = ({ onClose }) => {
+  const imageData = [
+    {
+      id: 1,
+      img: img1,
+    },
+    {
+      id: 2,
+      img: img2,
+    },
+    {
+      id: 3,
+      img: img3,
+    }
+  ];
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50">
-      <div className="bg-white p-6 rounded-lg relative w-80">
+      <div className="bg-white p-6 rounded-lg relative w-100 m-6">
         <button onClick={onClose} className="absolute top-2 right-2 text-xl">
-          <RxCross2/>
+          <RxCross2 />
         </button>
 
-        <h2 className="text-lg font-bold">Sheep Popup</h2>
+        <div className="grid grid-cols-3 gap-4">
+          {imageData.map((data) => {
+            return (
+              <div key={data.id}>
+                <img
+                  src={data.img}
+                  alt="imagepopup"
+                  className="w-40 h-40 md:w-60 md:h-60 object-contain rounded"
+                />
+              </div>
+            );
+          })}
+        </div>
+        <p className="text-red-600">ps- taking mr.sheep everywhere i go <br /> will add more</p>
       </div>
     </div>
   );
