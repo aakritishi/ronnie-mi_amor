@@ -1,5 +1,6 @@
 import React from "react";
 import { RxCross2 } from "react-icons/rx";
+import letter from "../../data/letter.json"
 
 const LetterPopupComponent = ({ onClose }) => {
   return (
