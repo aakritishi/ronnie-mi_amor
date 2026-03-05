@@ -10,7 +10,30 @@ const LetterPopupComponent = ({ onClose }) => {
           <RxCross2/>
         </button>
 
-        <h2 className="text-lg font-bold">Letter Popup</h2>
+        {letter.map((data)=>{
+            return(
+                <div key={data.id}>
+                    <h2 className="text-lg font-semibold">{data["first_segment"]}</h2>
+                    <p>{data.second_segment}</p>
+                    <p>{data.third_segment}</p>
+                    <p>{data.third_segment}</p>
+                    <p>{data.fourth_segment}</p>
+                    <p>{data.fifth_segment}</p>
+                    <p>{data.sixth_segment}</p>
+                    <p>{data.seventh_segment}</p>
+                    <p>{data.eighth_segment}</p>
+                    <p>{data.ninth_segment}</p>
+                    <p>{data.tenth_segment}</p>
+                    <p>{data.eleventh_segment}</p>
+                    <p>{data.twelfth_segment}</p>
+                    <p>{data.thirteenth_segment}</p>
+                    <p>{data.fourteenth_segment}</p>
+                    <p>{data.fifteenth_segment}</p>
+                    <p>{data.sixteenth_segment}</p>
+                    <p>{data.seventeenth_segmement}</p>
+                </div>
+            )
+        })}
       </div>
     </div>
   );
