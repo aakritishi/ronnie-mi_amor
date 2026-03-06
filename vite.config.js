@@ -12,5 +12,5 @@ export default defineConfig({
     }),
     tailwindcss(),
   ],
-  base: "/ronnie-mi_amor"
+  base: "/ronnie-mi_amor/"
 })
