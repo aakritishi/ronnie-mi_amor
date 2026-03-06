@@ -9,7 +9,7 @@ const FlowerPopupComponent = ({ onClose }) => {
           <RxCross2/>
         </button>
 
-        <h2 className="text-lg font-bold">Flower Popup</h2>
+        <h2 className="text-lg font-bold">was bout to work on this but</h2>
       </div>
     </div>
   );
