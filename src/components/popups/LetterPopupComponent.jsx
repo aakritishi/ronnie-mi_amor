@@ -19,7 +19,6 @@ const LetterPopupComponent = ({ onClose }) => {
                 </h2>
                 <p>{data.second_segment}</p>
                 <p>{data.third_segment}</p>
-                <p>{data.third_segment}</p>
                 <p>{data.fourth_segment}</p>
                 <p>{data.fifth_segment}</p>
                 <p>{data.sixth_segment}</p>

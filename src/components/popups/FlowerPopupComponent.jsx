@@ -59,7 +59,7 @@ const FlowerPopupComponent = ({ onClose }) => {
           {flowers === 5 && (
             <p className="text-[#000035]">
               Happy Birthday mai Loveee <br />I wish next year we can go to the
-              flower market together and pick out flowers for each other{" "}
+              flower shop together and pick out flowers for each other {}
               <span className="text-orange-600">T-T</span>
               <br />
               <span className="text-red-500">
